@@ -1,0 +1,70 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ipt2 module 1 practical</title>
+  <style>
+    body { font-family: system-ui, sans-serif; margin: 20px; }
+    section { margin-bottom: 24px; }
+    table { border-collapse: collapse; width: 100%; margin-top: 8px; }
+    th, td { border: 1px solid #ccc; padding: 8px; }
+    label { display: inline-block; width: 140px; }
+    input { margin: 4px 8px 4px 0; }
+    button { margin-left: 148px; }
+  </style>
+</head>
+<body>
+  <h1>student and subject management</h1>
+
+  <section>
+    <h2>add student</h2>
+    <div>
+      <label for="studentName">name</label>
+      <input id="studentName" type="text" />
+    </div>
+    <div>
+      <label for="studentAge">age</label>
+      <input id="studentAge" type="number" />
+    </div>
+    <div>
+      <label for="studentCourse">course</label>
+      <input id="studentCourse" type="text" />
+    </div>
+    <button onclick="addStudent()">add student</button>
+
+    <table id="studentTable">
+      <thead>
+        <tr><th>name</th><th>age</th><th>course</th></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <section>
+    <h2>add subject</h2>
+    <div>
+      <label for="subjectCode">code</label>
+      <input id="subjectCode" type="text" />
+    </div>
+    <div>
+      <label for="subjectName">name</label>
+      <input id="subjectName" type="text" />
+    </div>
+    <div>
+      <label for="subjectUnits">units</label>
+      <input id="subjectUnits" type="number" />
+    </div>
+    <button onclick="addSubject()">add subject</button>
+
+    <table id="subjectTable">
+      <thead>
+        <tr><th>code</th><th>name</th><th>units</th></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </section>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
